@@ -7,6 +7,7 @@ from GoogleNews import GoogleNews
 import spacy
 
 nltk.download('punkt')
+spacy.download("en_core_web_sm")
 
 # Use your OpenAI API key to access GPT-3
 openai.api_key = st.secrets["openai_api_key"]
