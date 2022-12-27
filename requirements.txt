@@ -4,5 +4,6 @@ streamlit~=1.16.0
 nltk~=3.8
 pandas~=1.5.2
 beautifulsoup4~=4.11.1
-pygooglenews~=0.1.2
 spacy~=3.4.4
+GoogleNews~=1.6.6
+newspaper3k

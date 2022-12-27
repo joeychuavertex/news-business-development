@@ -1,11 +1,9 @@
 import openai
-import requests
 import streamlit as st
-from bs4 import BeautifulSoup
 from newspaper import Article
 import nltk
 import pandas as pd
-from pygooglenews import GoogleNews
+from GoogleNews import GoogleNews
 import spacy
 
 nltk.download('punkt')
