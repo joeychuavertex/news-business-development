@@ -44,13 +44,14 @@ st.write(new_related_result)
 # use the search terms to query for related news
 new_related_list = list(new_related_result)
 gn = GoogleNews()
-news_result = gn.search(
+gn.search(
     " OR ".join(new_related_list),
 )
+news_result = gn.result(sort=True)
 
 nlp = spacy.load('en_core_web_sm')
 
-for article in news_result["entries"][:20]:
+for article in news_result[:20]:
     article_link = article["link"]
     if article_link:
         try:
